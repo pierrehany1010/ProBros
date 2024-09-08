@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #211C6A;
+    cursor: context-menu;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rectangle {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #74E291;
+    border-radius: 10px;
+    padding: 20px;
+}
+.first-logo {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.first-header {
+    color: #211C6A;
+    text-align: center;
+}
+.first-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    color: #74E291;
+    background-color: #211C6A;
+    margin-bottom: 15px;
+    width: 65%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+button a {
+    text-decoration: none;
+    color: #74E291;
+}
+button:hover a {
+    color: #211C6A;
+}
+button:hover {
+    background-color: #59B4C3;
+}
+#showContacts:hover {
+    text-decoration: none;
+    color: #211C6A;
+}
+.hidden-text {
+    display: none;
+}
+.contact-info1 {
+    display: flex;
+    align-items: center;
+}
+.show-number1 {
+    cursor: pointer; 
+    color: #211C6A; 
+    text-decoration: underline;
+}
+.phone-number1 {
+    display: none;
+    color: #211C6A;
+    margin-left: 5px;
+}
+.contact-info2 {
+    display: flex;
+    align-items: center;
+}
+.show-number2 {
+    cursor: pointer; 
+    color: #211C6A; 
+    text-decoration: underline;
+}
+.phone-number2 {
+    display: none;
+    color: #211C6A;
+    margin-left: 5px;
+}
