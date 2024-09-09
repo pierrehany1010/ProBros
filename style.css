@@ -9,7 +9,6 @@ body {
     margin: 0;
     height: 100vh;
 }
-
 .rectangle {
     width: 40%;
     background-color: #74E291;
@@ -18,7 +17,6 @@ body {
     box-sizing: border-box;
     text-align: center;
 }
-
 .first-logo {
     width: 25%;
     display: block;
@@ -26,20 +24,18 @@ body {
     margin-right: auto;
     border-radius: 50%;
 }
-
 .first-header {
     color: #211C6A;
     text-align: center;
 }
-
 .first-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-button {
+.button {
+    display: block;
     color: #74E291;
     background-color: #211C6A;
     margin-bottom: 15px;
@@ -47,62 +43,50 @@ button {
     height: 35px;
     border-radius: 5px;
     border: none;
+    text-align: center;
+    line-height: 35px;
     text-decoration: none;
 }
-
-button a {
-    text-decoration: none;
-    color: #74E291;
-}
-
-button:hover a {
+.button:hover {
+    background-color: #59B4C3;
     color: #211C6A;
 }
-
-button:hover {
-    background-color: #59B4C3;
+#showContacts{
+    font-size: 16px;
 }
-
 #showContacts:hover {
     text-decoration: none;
     color: #211C6A;
 }
-
 .hidden-text {
     display: none;
 }
-
 .contact-info1,
 .contact-info2 {
     display: flex;
     align-items: center;
 }
-
 .show-number1,
 .show-number2 {
-    cursor: pointer; 
-    color: #211C6A; 
+    cursor: pointer;
+    color: #211C6A;
     text-decoration: underline;
 }
-
 .phone-number1,
 .phone-number2 {
     display: none;
     color: #211C6A;
     margin-left: 5px;
 }
-
 @media (max-width: 450px) {
     .rectangle {
-        width: 60%;
+        width: 70%;
         margin: auto;
     }
-
     .first-logo {
-        width: 40%;
+        width: 50%;
     }
-
-    button {
+    .button {
         height: 35px;
     }
 }

@@ -1,15 +1,14 @@
-
 document.getElementById('showContacts').addEventListener('click', function() {
     const hiddenText = document.querySelector('.hidden-text');
-    hiddenText.style.display = hiddenText.style.display === 'none' ? 'block' : 'none';
+    const computedStyle = window.getComputedStyle(hiddenText).display;
+    hiddenText.style.display = computedStyle === 'none' ? 'block' : 'none';
 });
-
 
 function togglePhoneNumber(elementId) {
     const phoneNumber = document.getElementById(elementId);
-    phoneNumber.style.display = phoneNumber.style.display === 'none' ? 'block' : 'none';
+    const computedStyle = window.getComputedStyle(phoneNumber).display;
+    phoneNumber.style.display = computedStyle === 'none' ? 'block' : 'none';
 }
-
 
 document.getElementById('showNumber1').addEventListener('click', function(event) {
     event.preventDefault();
